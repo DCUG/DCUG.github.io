@@ -1,0 +1,139 @@
+.logo {
+  &_dcug {
+    display: block;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    margin: calc(50vh - 12.5rem) auto 0;
+    background: url('../../public/imgs/DCUG_logo.svg') 50% 50% no-repeat #fff;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .2);
+    background-size: 202% 202%;
+  }
+
+  &__name {
+    display: block;
+    width: 42rem;
+    height: 6rem;
+    position: relative;
+    margin: 0 auto;
+    padding: .75rem;
+    padding-left: 4rem;
+    z-index: 5000;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 1rem;
+      top: 1rem;
+      left: 0;
+      width: 3rem;
+      background-color: #fff;
+      border-top: 1rem solid rgb(230, 8, 8);
+      border-bottom: 1rem solid rgb(14, 96, 248);
+    }
+
+    &:after {
+      content: '22 NOV';
+      color: #fff;
+      font-weight: 100;
+      font-size: 1.5rem;
+      display: inline-block;
+      margin: 0 auto;
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      bottom: -.5rem;
+      left: 0;
+    }
+  }
+
+  &__word {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+    z-index: 100000;
+
+    &:first-letter {
+      color: #fff;
+      text-shadow: 0 2px 40px rgb(250, 111, 30);
+    }
+  }
+}
+
+.meetup-btn {
+  background: url('https://www.meetup.com/mu_static/nl-NL/logo--script.004ada05.svg') no-repeat center center #fff;
+  background-size: 80%;
+  width: 10rem;
+  height: 4rem;
+  z-index: 5000;
+  position: relative;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .5);
+  transition: box-shadow .25s ease;
+
+  &:before {
+    content: '#6';
+    display: inline-block;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+    text-align: center;
+    line-height: 4rem;
+    color: #333;
+    font-size: 2rem;
+    left: -5rem;
+    transform: rotate(-10deg);
+    transition: all .15s ease;
+  }
+
+  &:after {
+    content: '@';
+    display: inline-block;
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .5);
+    background-color: #fff;
+    background: url('https://cdn.frankwatching.com/app/uploads/2017/07/mirabeau.jpg') no-repeat center center #fff;
+    text-align: center;
+    background-size: 100%;
+    line-height: 2rem;
+    color: #ddd;
+    font-size: .875rem;
+    right: -6.5rem;
+    top: -1rem;
+    transform: rotate(7deg);
+    transition: all .25s ease;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5);
+
+    &:before {
+      box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .5);
+      transform: rotate(-12deg);
+      left: -6rem;
+      width: 4.5rem;
+      height: 4.5rem;
+      line-height: 4.5rem;
+    }
+
+    &:after {
+      box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .5);
+      transform: rotate(9deg);
+      right: -8rem;
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+}
